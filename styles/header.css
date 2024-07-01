@@ -5,7 +5,6 @@ header {
     box-shadow: 0 0 10px 1px black;
     position: fixed;
     z-index: 100;
-    border: 2px solid green;
     /* overflow: hidden; */
 }
 
