@@ -8,8 +8,18 @@
     margin-top: 60px;
 }
 
+.home .space {
+    height: 100%;
+    flex-grow: 1;
+}
+
+.home .space.right {
+    background-color: var(--bg2);
+}
+
+
 .home .home-content {
-    width: 100%;
+    width: min(100%, var(--app-width));
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,4 +78,24 @@
 
 .home .home-content .banner img {
     height: 25rem;
+}
+
+@media screen and (max-width: 720px) {
+    .home .home-content .banner {
+        position: absolute;
+        width: 100%;
+        background-color: transparent;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    .home .home-content .typography {
+        width: 100%;
+    }
+
+    .home .home-content .typography * {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
 }
