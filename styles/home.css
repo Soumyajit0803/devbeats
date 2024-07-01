@@ -1,60 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-:root {
-    font-family: 'Roboto';
-    --theme: #e79c25;
-    --bg1: #1f242a;
-    --bg2: #364049;
-    --bg3: #525a67;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-header {
-    background: #ffffff;
-    width: 100%;
-    height: 60px;
-    box-shadow: 0 0 10px 1px black;
-    position: fixed;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-li {
-    list-style-type: none;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    height: 100%;
-}
-
-.header .header-logo {
-    margin-left: 1.5rem;
-}
- 
-.brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.header .header-menu {
-    display: flex;
-    gap: 1rem;
-    font-size: 1rem;
-    margin-right: 1.5rem
-}
-
 .home {
     background: var(--bg1);
     display: flex;
@@ -96,24 +39,6 @@ li {
     /* font-size: 1.3rem; */
     color: white;
     padding-top: 1rem;
-}
-
-.normal-button {
-    background: var(--bg3);
-}
-
-.theme-button {
-    background: var(--theme);
-}
-
-button {
-    border: none;
-    outline: none;
-    padding: 1rem;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
 }
 
 .home .home-content .typography .button-group {
