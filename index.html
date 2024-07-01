@@ -5,6 +5,7 @@
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <link rel="stylesheet" href="./index.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Devbeats earpods for sale" />
         <title>DevBeats</title>
     </head>
     <body>
@@ -24,31 +25,35 @@
                         <a href="#shopping">SHOPPING</a>
                     </li>
                 </ul>
-                <button class="menubutton" onclick="handleClick()" />
+                <button aria-label="togglebutton" class="menubutton" onclick="handleClick()" />
             </nav>
             <div id="drawer" class="drawer">
                 <div class="head">
                     DevBeats
-                    <button onclick="handleClick()" class="menubutton" />
+                    <button aria-label="togglebutton" onclick="handleClick()" class="menubutton" />
                 </div>
                 <div class="section">
                     <div class="heading">General</div>
-                    <li>About us</li>
-                    <li>FAQs</li>
-                    <li>Features</li>
+                    <ul>
+                        <li>About us</li>
+                        <li>FAQs</li>
+                        <li>Features</li>
+                    </ul>
                 </div>
                 <div class="section">
                     <div class="heading">Shopping</div>
+                    <ul>
                     <li>Discounts & Offers</li>
                     <li>Devcamp zone</li>
                     <li>Latest releases</li>
-                    <li>Student special</li>
+                    <li>Student special</li></ul>
                 </div>
                 <div class="section">
                     <div class="heading">Account</div>
+                    <ul>
                     <li>Profile</li>
                     <li>My cart</li>
-                    <li>Logout</li>
+                    <li>Logout</li></ul>
                 </div>
             </div>
         </header>
@@ -67,7 +72,7 @@
                     </div>
                 </div>
                 <div class="banner">
-                    <img src="/assets/earbud.png" />
+                    <img alt="product" src="/assets/earbud.png" />
                 </div>
             </div>
             <div class="space right"></div>
@@ -77,10 +82,10 @@
                 <div class="about-head-thin">About <span class="theme">DevBeats</span></div>
                 <div class="gallery-section">
                     <div class="gallery">
-                        <div class="cell"><img src="/assets/banner/banner-1.png" /></div>
-                        <div class="cell"><img src="/assets/banner/banner-2.png" /></div>
-                        <div class="cell"><img src="/assets/banner/banner-3.png" /></div>
-                        <div class="cell"><img src="/assets/banner/banner-4.png" /></div>
+                        <div class="cell"><img alt="banner-1" src="/assets/banner/banner-1.png" /></div>
+                        <div class="cell"><img alt="banner-2" src="/assets/banner/banner-2.png" /></div>
+                        <div class="cell"><img alt="banner-3" src="/assets/banner/banner-3.png" /></div>
+                        <div class="cell"><img alt="banner-4" src="/assets/banner/banner-4.png" /></div>
                     </div>
                 </div>
                 <div class="about-text">
@@ -90,21 +95,20 @@
                         reprehenderit reiciendis voluptate nisi inventore soluta quis quam, modi debitis maiores in eius
                         optio ad obcaecati!
                     </div>
-                    <button class="theme-button">FOLLOW LIFE AT DEVBEATS</button>
+                    <button aria-label="follow" class="theme-button">FOLLOW LIFE AT DEVBEATS</button>
                 </div>
             </div>
         </section>
     </body>
     <script>
-        const drawer = document.getElementById("drawer")
+        const drawer = document.getElementById("drawer");
 
-        const handleClick = ()=>{
-            if(drawer.classList.contains("open")) {
-                drawer.classList.remove("open")
+        const handleClick = () => {
+            if (drawer.classList.contains("open")) {
+                drawer.classList.remove("open");
             } else {
-                drawer.classList.add("open")
+                drawer.classList.add("open");
             }
-        }
-        
+        };
     </script>
 </html>
