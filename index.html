@@ -24,7 +24,33 @@
                         <a href="#shopping">SHOPPING</a>
                     </li>
                 </ul>
+                <button class="menubutton" onclick="handleClick()" />
             </nav>
+            <div id="drawer" class="drawer">
+                <div class="head">
+                    DevBeats
+                    <button onclick="handleClick()" class="menubutton" />
+                </div>
+                <div class="section">
+                    <div class="heading">General</div>
+                    <li>About us</li>
+                    <li>FAQs</li>
+                    <li>Features</li>
+                </div>
+                <div class="section">
+                    <div class="heading">Shopping</div>
+                    <li>Discounts & Offers</li>
+                    <li>Devcamp zone</li>
+                    <li>Latest releases</li>
+                    <li>Student special</li>
+                </div>
+                <div class="section">
+                    <div class="heading">Account</div>
+                    <li>Profile</li>
+                    <li>My cart</li>
+                    <li>Logout</li>
+                </div>
+            </div>
         </header>
         <section class="home" id="home">
             <div class="home-content">
@@ -67,4 +93,16 @@
             </div>
         </section>
     </body>
+    <script>
+        const drawer = document.getElementById("drawer")
+
+        const handleClick = ()=>{
+            if(drawer.classList.contains("open")) {
+                drawer.classList.remove("open")
+            } else {
+                drawer.classList.add("open")
+            }
+        }
+        
+    </script>
 </html>

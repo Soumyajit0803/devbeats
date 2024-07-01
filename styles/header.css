@@ -32,3 +32,74 @@ header .header .header-menu {
     font-size: 1rem;
     margin-right: 1.5rem
 }
+
+.drawer {
+    border: 1px solid yellow;
+    width: min-content;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100vh;
+
+    transform: translateX(-100%);
+    transition: all ease 0.2s;
+}
+
+.drawer .head {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 0.5rem 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.drawer .section {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.drawer .section .heading {
+    font-size: 1.3rem;
+    font-weight: bold
+}
+
+.drawer .section li {
+    font-size: 1rem;
+}
+
+.menubutton {
+    background: url("../public/assets/Menu.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    margin-right: 0.5rem;
+}
+
+.drawer.open {
+    transform: translateX(0)
+}
+
+@media only screen and (max-width: 500px) {
+    .drawer {
+        width: 100%;
+    }
+
+    header .header .header-menu{
+        display: none
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .menubutton {
+        display: none
+    }
+}
