@@ -3,15 +3,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 600px;
+    width: 100%;
+    margin-top: 60px;
 }
 
 .home .home-content {
-    width: min(100%, var(--app-width));
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    height: 100%;
 }
 
 .home .home-content .typography {
@@ -23,7 +27,7 @@
     padding: 1rem;
     font-size: 1.4rem;
     color: white;
-    border: 1px solid;
+    /* border: 1px solid yellow; */
 }
 
 .home .home-content .typography .catchy-line{
@@ -34,7 +38,7 @@
 }
 
 .home .home-content .typography .catchy-line span {
-    color: orange
+    color: var(--theme)
 }
 
 .home .home-content .typography .desc {
@@ -49,17 +53,19 @@
     justify-content: center;
     gap: 1rem;
     padding-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .home .home-content .banner {
     background: var(--bg2);
     width: 50%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid yellow; */
 }
 
 .home .home-content .banner img {
-    height: 25rem
+    height: 25rem;
 }

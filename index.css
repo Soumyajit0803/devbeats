@@ -3,6 +3,7 @@
 /* css file imports */
 @import '/styles/header.css';
 @import '/styles/home.css';
+@import '/styles/about.css';
 
 :root {
     font-family: 'Roboto';
@@ -13,7 +14,9 @@
     --app-width: 1400px;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -27,21 +30,56 @@ a {
 li {
     list-style-type: none;
 }
-
-.normal-button {
-    background: var(--bg3);
-}
-
-.theme-button {
-    background: var(--theme);
-}
-
 button {
     border: none;
     outline: none;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    width: max-content !important;
+    cursor: pointer;
+}
+
+.normal-button {
+    background-color: var(--bg3);
+}
+
+.theme-button {
+    background-color: var(--theme);
+}
+
+html {
+    width: calc(100vw - 5px)
+}
+
+body {
+    /* overflow-x: hidden; */
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--theme);
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    width: 5px;
+    height: 5px;
+    
 }

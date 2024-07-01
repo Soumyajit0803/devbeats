@@ -1,12 +1,15 @@
 header {
     background: #ffffff;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     box-shadow: 0 0 10px 1px black;
     position: fixed;
+    z-index: 100;
+    border: 2px solid green;
+    /* overflow: hidden; */
 }
 
-.header {
+header .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,16 +17,16 @@ header {
     height: 100%;
 }
 
-.header .header-logo {
+header .header .header-logo {
     margin-left: 1.5rem;
 }
  
-.brand {
+header .header .header-logo .brand {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.header .header-menu {
+header .header .header-menu {
     display: flex;
     gap: 1rem;
     font-size: 1rem;
