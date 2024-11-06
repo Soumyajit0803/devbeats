@@ -1,3 +1,4 @@
+# Dhananjay mishra
 ## Clone the repository, start brainstorming your ideas! 💡
 
 Follow the below commands step by step, to clone this repository in your machine and get the website in the same state as I was during the meet.
@@ -21,4 +22,4 @@ And it is done! Now run the vite server using the following command and check if
 npm run dev
 ```
 
-Start building from here, we are excited to see your ideas!✨
+Start building from here, 
